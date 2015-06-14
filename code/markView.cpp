@@ -10,14 +10,6 @@ VideoCapture capture;
 int lastX;
 int lastY;
 
-void CallBackFunc(int event, int x, int y, int flags, void* userdata) {
-
-	if  (event == EVENT_MOUSEMOVE ) {
-		lastX = x;
-		lastY = y;
-	}
-}
-
 int main( int argc, char** argv )
 {
 	videoName = argv[1];
@@ -29,26 +21,29 @@ int main( int argc, char** argv )
 		return -1;
 	}
 
-	Mat frame;
-	namedWindow(videoName, CV_WINDOW_AUTOSIZE);
-	setMouseCallback(videoName, CallBackFunc, NULL);
-
 	string outputFile(videoName);
 	outputFile.append(".txt");
-	ofstream myfile;
-  	myfile.open (outputFile.c_str());
-	int frames = 0;
+	std::ifstream infile(outputFile.c_str());
+
+	Mat frame;
+	namedWindow(videoName, CV_WINDOW_AUTOSIZE);
+	
+	int x, y;
+
 	while(true)
 	{
-		frames++;
+		infile >> x >> y;
 	    capture >> frame;
 	    if (frame.empty())
 	        break;
+	    circle(frame, Point(x,y), 21, Scalar(0,0,0),1, 8,0);
+	    circle(frame, Point(x,y), 20, Scalar(255,255,255),1, 8,0);
+	    circle(frame, Point(x,y), 19, Scalar(0,0,0),1, 8,0);
+	    circle(frame, Point(x,y), 2, Scalar(255,255,255),3, 8,0);
+
 	    imshow(videoName, frame);
-	    waitKey(0);
-	    myfile << lastX << "," << lastY << "\n";
+	    if (waitKey(30)=='q')
+	    	break;
 	}
-	printf("%d\n", frames);
-	myfile.close();
 	return 0;
 }
