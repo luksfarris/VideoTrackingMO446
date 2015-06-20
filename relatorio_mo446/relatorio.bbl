@@ -1,8 +1,53 @@
 \begin{thebibliography}{1}
 
+\bibitem{Kolsch2004}
+M.~Kolsch and M.~Turk.
+\newblock Fast 2d hand tracking with flocks of features and multi-cue
+  integration.
+\newblock In {\em Proceedings of the 2004 Conference on Computer Vision and
+  Pattern Recognition Workshop (CVPRW'04) Volume 10 - Volume 10}, CVPRW '04,
+  pages 158--, Washington, DC, USA, 2004. IEEE Computer Society.
+
+\bibitem{Maggio2005}
+E.~Maggio and A.~Cavallaro.
+\newblock Hybrid particle filter and mean shift tracker with adaptive
+  transition model.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 2005. Proceedings.
+  (ICASSP '05). IEEE International Conference on}, volume~2, pages 221--224,
+  March 2005.
+
+\bibitem{Min1997}
+B.~Min, H.~Yoon, J.~Soh, Y.~Yang, and T.~Ejima.
+\newblock Hand gesture recognition using hidden markov models.
+\newblock In {\em Systems, Man, and Cybernetics, 1997. Computational
+  Cybernetics and Simulation., 1997 IEEE International Conference on},
+  volume~5, pages 4232--4235 vol.5, Oct 1997.
+
+\bibitem{Ning2012}
+J.~Ning, L.~Zhang, D.~Zhang, and C.~Wu.
+\newblock Scale and orientation adaptive mean shift tracking.
+\newblock {\em Computer Vision, IET}, 6(1):52--61, January 2012.
+
+\bibitem{Shan2007}
+C.~Shan, T.~Tan, and Y.~Wei.
+\newblock Real-time hand tracking using a mean shift embedded particle filter.
+\newblock {\em Pattern Recognition}, 40(7):1958 -- 1970, 2007.
+
+\bibitem{Shan2004}
+C.~Shan, Y.~Wei, T.~Tan, and F.~Ojardias.
+\newblock Real time hand tracking by combining particle filtering and mean
+  shift.
+\newblock In {\em Automatic Face and Gesture Recognition, 2004. Proceedings.
+  Sixth IEEE International Conference on}, pages 669--674, May 2004.
+
+\bibitem{Wang2009}
+Z.~Wang, X.~Yang, Y.~Xu, and S.~Yu.
+\newblock Camshift guided particle filter for visual tracking.
+\newblock {\em Pattern Recogn. Lett.}, 30(4):407--413, March 2009.
+
 \bibitem{Yin2011}
 M.~Yin, J.~Zhang, H.~Sun, and W.~Gu.
 \newblock Multi-cue-based camshift guided particle filter tracking.
-\newblock {\em Expert Systems with Applications}, 38:6313--6318, 2011.
+\newblock {\em Expert Systems with Applications}, 38(5):6313 -- 6318, 2011.
 
 \end{thebibliography}

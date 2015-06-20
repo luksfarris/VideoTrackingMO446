@@ -23,13 +23,27 @@ However, each of them have their particular strengths and weaknesses. In this pa
 
 \section{Introduction}
 
-Object tracking is to determine the position of the object at each frame of a video sequence. Reliable visual tracking is indispensable in several fields such as: ambient intelligent systems, augmented reality, human–computer interaction, video compression, and robotics. However, the task of robust tracking is very challenging regarding fast motion, occlusion, structural deformation, illumination variation, background clutters, and real-time restriction\cite{Yin2011}. 
+Object tracking is to determine the position of the object at each frame of a video sequence. Reliable visual tracking is indispensable in several fields such as: ambient intelligent systems, augmented reality, human–computer interaction, video compression, and robotics. However, the task of robust tracking is very challenging regarding fast motion, occlusion, structural deformation, illumination variation, background clutters, and real-time restriction \cite{Yin2011}. 
 \par
-Tracking algorithms can be divided into two categories. The first category is deterministic method. Mean-Shift  is a typical example. This method finds the local maximum of probability distribution in the direction of gradient. It is usually more accurate and quick in tracking than the probabilistic multi-hypothesis tracking algorithm. But it may run into trouble when similar objects are presented in background or when complete occlusion occurs. Camshift is called the Continuously Adaptive Mean Shift algorithm which is a modified algorithm of Mean-Shift. The second category is probabilistic method. The representative method is particle filter which is a multi-hypothesis tracking algorithm under the Bayesian framework . Due to particle filter’s non-Gaussian non-linear assumption and multiple hypothesis property, they have been successfully applied to visual tracking, and show unique merit in cluttered environment. However, the inefficiency in sampling (due to the problem of degeneracy and impoverishment) and the huge computational complexity limit the usefulness of particle filter in on-line tracking\cite{Yin2011}.
+Tracking algorithms can be divided into two categories. The first category is deterministic method. Mean-Shift  is a typical example. This method finds the local maximum of probability distribution in the direction of gradient. It is usually more accurate and quick in tracking than the probabilistic multi-hypothesis tracking algorithm. But it may run into trouble when similar objects are presented in background or when complete occlusion occurs. Camshift is called the Continuously Adaptive Mean Shift algorithm which is a modified algorithm of Mean-Shift. The second category is probabilistic method. The representative method is particle filter which is a multi-hypothesis tracking algorithm under the Bayesian framework . Due to particle filter’s non-Gaussian non-linear assumption and multiple hypothesis property, they have been successfully applied to visual tracking, and show unique merit in cluttered environment. However, the inefficiency in sampling (due to the problem of degeneracy and impoverishment) and the huge computational complexity limit the usefulness of particle filter in on-line tracking \cite{Yin2011}.
 \par
 
+\section{Related work}
+\section{Methods}
+\section{Experiments}
+\section{Results and discussion}
+\section{Conclusion}
 
 \bibliographystyle{plain}
 \bibliography{mylib}
+
+\citation{Wang2009}
+\citation{Kolsch2004}
+\citation{Min1997}
+\citation{Maggio2005}
+\citation{Yin2011}
+\citation{Shan2004}
+\citation{Shan2007}
+\citation{Ning2012}
 
 \end{document}

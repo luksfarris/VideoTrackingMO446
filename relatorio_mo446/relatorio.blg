@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relatorio.aux
 The style file: plain.bst
 Database file #1: mylib.bib
-You've used 1 entry,
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            505 strings with 4157 characters,
-and the built_in function-call counts, 418 in all, are:
-= -- 38
-> -- 23
-< -- 0
-+ -- 9
-- -- 8
-* -- 35
-:= -- 77
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
+            564 strings with 5673 characters,
+and the built_in function-call counts, 3636 in all, are:
+= -- 357
+> -- 164
+< -- 6
++ -- 64
+- -- 56
+* -- 280
+:= -- 558
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 29
-format.name$ -- 8
-if$ -- 82
+cite$ -- 8
+duplicate$ -- 138
+empty$ -- 283
+format.name$ -- 56
+if$ -- 794
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 5
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 43
+num.names$ -- 16
+pop$ -- 51
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 44
 quote$ -- 0
-skip$ -- 7
+skip$ -- 114
 stack$ -- 0
-substring$ -- 32
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 279
+swap$ -- 51
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 32
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 13
+while$ -- 30
+width$ -- 9
+write$ -- 95
