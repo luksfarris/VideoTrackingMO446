@@ -1,9 +1,13 @@
 import numpy as np
 import cv2
 import math
+import sys
 
+videoname = sys.argv[1]
+cap = cv2.VideoCapture(videoname)
 
-cap = cv2.VideoCapture('../videos/original/f01.mp4')
+f = open(videoname+'.cams','w')
+#cap = cv2.VideoCapture('../videos/original/f01.mp4')
 #cap = cv2.VideoCapture('../videos/original/f05.mp4')
 
 # take first frame of the video
@@ -11,8 +15,10 @@ ret,frame = cap.read()
 
 # setup initial location of window
 #r,h,c,w = 350,190,300,190  # funciona no video 5
-r,h,c,w = 100,190,100,190  # funciona no video 1
+#r,h,c,w = 100,190,100,190  # funciona no video 1
+r,h,c,w = int(sys.argv[2]), int(sys.argv[4]), int(sys.argv[3]), int(sys.argv[5])
 track_window = (c,r,w,h)
+
 
 # set up the ROI for tracking
 roi = frame[r:r+h, c:c+w]
@@ -42,14 +48,21 @@ while(1):
     point4=((-size[0]/2*math.cos(angle)+size[1]/2*math.sin(angle))+center[0] , (-size[0]/2*math.sin(angle)-size[1]/2*math.cos(angle))+center[1])
     pts = (point1, point2, point3, point4)
     pts = np.int32(pts)
-        
-    cv2.polylines(frame,[pts],1, (255,255,255))
+    
+    f.write(str(point1[0])+','+str(point1[1])+',')
+    f.write(str(point2[0])+','+str(point2[1])+',')
+    f.write(str(point3[0])+','+str(point3[1])+',')
+    f.write(str(point4[0])+','+str(point4[1]))
+    f.write('\n')
+    
+    cv2.polylines(frame,[pts],1, (0,255,0))
 
     cv2.imshow("teste",frame)
     
-    if (cv2.waitKey(30)=='q'):
+    if cv2.waitKey(33) == ord('q'):
       break
   else:
     break
 cv2.destroyAllWindows()
 cap.release()
+f.close()
